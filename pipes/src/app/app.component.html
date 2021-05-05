@@ -4,13 +4,82 @@
   <div class="row">
     <div class="form-group col">
       <label>Payee Name</label>
-      <input class="form-ccntrol" (input)="onNameChange($event.target.value)" />
+      <input class="form-control" (input)="onNameChange($event.target.value)" />
     </div>
 
     <div class="col">
       <label><strong>Name</strong></label>
       <div>
         {{ name | titlecase }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Payment Date</label>
+      <input
+        type="date"
+        class="form-control"
+        (input)="onDateChange($event.target.value)"
+      />
+    </div>
+
+    <div class="col">
+      <label><strong>Payment Date</strong></label>
+      <div>
+        {{ date | date: "MMMM dd, y" }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Payment Amount</label>
+      <input
+        class="form-control"
+        (input)="onAmountChange($event.target.value)"
+      />
+    </div>
+
+    <div class="col">
+      <label><strong>Payment Amount</strong></label>
+      <div>
+        {{ amount | currency: "JPY" }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Height</label>
+      <input
+        class="form-control"
+        (input)="onHeightChange($event.target.value)"
+      />
+    </div>
+
+    <div class="col">
+      <label><strong>Height</strong></label>
+      <div>
+        {{ height | number: "1.0-3" }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Miles</label>
+      <input
+        class="form-control"
+        (input)="onMilesChange($event.target.value)"
+      />
+    </div>
+
+    <div class="col">
+      <label><strong>Kilometers</strong></label>
+      <div>
+        {{ miles }}
       </div>
     </div>
   </div>

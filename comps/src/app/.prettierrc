@@ -4,11 +4,12 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "prettier.enabled": true,
-    "prettier.bracketSpacing": true,
+    "enabled": true,
+    "bracketSpacing": true,
     "trailingComma": "es5",
     "tabWidth": 4,
     "semi": false,
     "singleQuote": true,
-    "useTabs": false
+    "useTabs": false,
+    "jsxBracketSameLine": true
 }

@@ -11,7 +11,8 @@ import { PartnersComponent } from './partners/partners.component';
 import { TabsComponent } from './tabs/tabs.component'
 
 @NgModule({
-  declarations: [CollectionsHomeComponent, TableComponent, BiographyComponent, CompaniesComponent, PartnersComponent, TabsComponent],
+  declarations: [CollectionsHomeComponent, TableComponent, BiographyComponent,
+    CompaniesComponent, PartnersComponent, TabsComponent],
   imports: [
     CommonModule,
     CollectionsRoutingModule,

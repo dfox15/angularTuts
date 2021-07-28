@@ -6,6 +6,7 @@ import { Component, OnInit, ElementRef } from '@angular/core';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
+  modalOpen = false;
 
   constructor(private el: ElementRef) {
 
@@ -15,4 +16,11 @@ export class ModalComponent implements OnInit {
     document.body.appendChild(this.el.nativeElement)
   }
 
+  ngOnDestroy() {
+    this.el.nativeElement.remove()
+  }
+
+  onClick() {
+    this.modalOpen = !this.modalOpen
+  }
 }

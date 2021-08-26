@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
@@ -11,9 +12,7 @@ import { PageListComponent } from './page-list/page-list.component';
     SearchBarComponent,
     PageListComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [ BrowserModule, HttpClientModule ],
   providers: [],
   bootstrap: [AppComponent]
 })

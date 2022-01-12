@@ -4,9 +4,7 @@ import { AsyncValidator, FormControl } from "@angular/forms";
 import { map, catchError } from 'rxjs/operators';
 import { of } from "rxjs";
 
-@Injectable({
-    providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class UniqueUsername implements AsyncValidator {
     constructor(private http: HttpClient) { }
     
